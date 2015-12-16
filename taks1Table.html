@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1> Add Employee</h1>
+	
+	<form action ="" method ="get">
+	<table>
+	
+	
+		<tr >
+			<td><label for= "first-name" >First name: </label></td>
+			<td><input type="text" id="first-name" name="first_name" size="25"></td>
+		</tr>
+		<tr>
+			<td><label for ="last-name"> Last name:</label></td>
+			<td><input type = "text" id ="last-name" name = "last_name"></td>
+		</tr>
+		<tr>
+			<td><label for = "title">Title</label></td>
+			<td><input type="text" id = "title" name = "title"></td>
+		</tr>
+		
+		<tr>
+			<td ><label>Title of Courtesy</label></td>
+				
+				<td ><input type="radio" id="dr" value="dr" name="title">
+				<label for = "dr">Dr. </label>
+				
+				<input type ="radio" id = "mr" value="mr" name="title" checked="checked">
+				<label for="mr">Mr.</label>
+				
+				<input type ="radio" id="mrs" value="mrs" name="title">
+				<label for="mrs">Mrs.</label>
+				
+				<input type="radio" id="ms" value="ms" name="title">
+				<label for="ms">Ms.</label></td>
+		</tr>
+		
+		
+		<tr>
+		<td><label>Birth date </label></td>
+		<td><select id="month" name="month">
+					<option value="1" >January</option>
+					<option value="2" >February</option>
+					<option value="3" >March</option>
+					<option value="4" >April</option>
+					<option value="5" >May</option>
+					<option value="6" >June</option>
+					<option value="7" >July</option>
+					<option value="8" >August</option>
+					<option value="9" >September</option>
+					<option value="10" >October</option>
+					<option value="11" >November</option>
+					<option value="12" >December</option>
+					
+		 </select>
+		<select id="day" name="day">
+				<script>
+				   for(var i = 1; i < 32; i++){
+					document.write('<option value="'+i+'">'+i+'</option>');
+				  }
+				  </script>
+		</select>
+		
+		<select id="year" name="year">
+			  <script>
+				  var myDate = new Date();
+				  var year = myDate.getFullYear();
+				  for(var i = 1900; i < year+1; i++){
+					  document.write('<option value="'+i+'">'+i+'</option>');
+				  }
+			  </script>
+		</select></td>
+		
+		</tr>
+		<tr>
+		<td><label>Hire date </label></td>
+		<td><select id="month" name="month">
+					<option value="1" >January</option>
+					<option value="2" >February</option>
+					<option value="3" >March</option>
+					<option value="4" >April</option>
+					<option value="5" >May</option>
+					<option value="6" >June</option>
+					<option value="7" >July</option>
+					<option value="8" >August</option>
+					<option value="9" >September</option>
+					<option value="10" >October</option>
+					<option value="11" >November</option>
+					<option value="12" >December</option>
+					
+		 </select>
+		<select id="day" name="day">
+		
+				<script>
+				   for(var i = 1; i < 32; i++){
+					document.write('<option value="'+i+'">'+i+'</option>');
+				  }
+				  </script>
+		</select>
+		
+		<select id="year" name="year">
+			  <script>
+				  var myDate = new Date();
+				  var year = myDate.getFullYear();
+				  for(var i = 1900; i < year+1; i++){
+					  document.write('<option value="'+i+'">'+i+'</option>');
+				  }
+			  </script>
+		</select>
+		
+		</tr>
+		<tr> 
+		 	<td><label for="adres">Address:</label></td>
+		 	<td><input type="text" id="adres" name="adres"></td>
+		</tr>
+		<tr>
+		<td><label for="city">City: </label></td>
+		<td><input type="text" id="city" name="city"></td>
+		 </tr>
+		 <tr>
+		 	<td><label for="region">Region:</label></td>
+		 	<td><input type="text" id="city" name="city"></td>
+		 </tr>
+		<tr>
+			<td><label for="postal-code">Postal code:</label></td>
+			<td><input type="text" id="postal-code" name="postal-code"></td>
+		</tr>
+		<tr>
+		<td><label for="country">Country:</label></td>
+		<td><input type="text" id="country" name="country"></td>
+		</tr>
+		<tr>
+			<td><label for="home-phone">Home Phone</label></td>
+			<td><input type="text" id="home-phone" name="home_phone"></td>
+		</tr>
+		<tr>
+			<td><label for="extension">Extension:</label></td>
+			<td><input type="text" id="extension" name="etension"></td>
+		</tr>
+		<tr>
+			<td><label for="notes">Notes:</label></td>
+		</tr>
+		<tr>
+			<td colspan="4"><textarea rows="5" cols="50" name="notes">Text....</textarea></td>
+		</tr>
+		<tr>
+		<td>	<label for="manager">Manager:</label></td>
+			<td><select id="manager" name="manager">
+				<option value="1">Andrew Fuller</option>
+				<option value="2">Jessica Jones</option>
+				<option value="3">Luke Cage</option>
+				<option value="4">Matt Murdock</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td><label for="password">Password:</label></td>
+			<td><input type="text" id="password" name="password" placeholder="******"></td>
+		</tr>
+		<tr>
+		<td>	<label for="repeat-password">Repeat Password:</label></td>
+			<td><input type="text" id="repeat-password" name="repeat_password" placeholder="******"></td>
+		</tr>
+		<tr> 
+			<td><button type="submit" value="add employee">Add Employee</button></td>
+		</tr>
+		
+		</table>
+	</form>
+	
+	
+	
+	
+
+</body>
+</html>
